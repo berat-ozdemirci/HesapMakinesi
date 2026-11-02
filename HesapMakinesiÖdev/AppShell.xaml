@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="HesapMakinesiÖdev.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:HesapMakinesiÖdev"
+    Title="HesapMakinesiÖdev">
+
+    <TabBar>
+
+        <ShellContent
+        Title="Standart"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="StandartPage" />
+
+        <ShellContent
+        Title="Bilimsel"
+        ContentTemplate="{DataTemplate local:Bilimsel}"
+        Route="BilimselPage" />
+
+        <ShellContent
+        Title="Ayarlar"
+        ContentTemplate="{DataTemplate local:Ayarlar}"
+        Route="AyarlarPage" />
+
+    </TabBar>
+
+</Shell>

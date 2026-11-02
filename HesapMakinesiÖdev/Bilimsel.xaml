@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="HesapMakinesiÖdev.Bilimsel"
+    Title="Bilimsel"
+    Style="{StaticResource HesapSayfaStili}">
+
+    
+
+    <Grid Padding="15"
+          RowDefinitions="Auto,*,Auto">
+
+        <Label
+            Grid.Row="0"
+            Text="Bilimsel"
+            Style="{StaticResource HesapBaslikStili}"/>
+
+        <Label
+            x:Name="BilimselSonuc"
+            Grid.Row="1"
+            Text="0"
+            Style="{StaticResource HesapSonucStili}"/>
+
+        <Grid
+            Grid.Row="2"
+            RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto"
+            ColumnDefinitions="*,*,*,*,*"
+            RowSpacing="5"
+            ColumnSpacing="5">
+
+
+            <Button Grid.Row="0" Grid.Column="0" Text="sin" Clicked="TrigoIslemler" Style="{StaticResource HesapSayiButonu}"/>
+            <Button Grid.Row="0" Grid.Column="1" Text="cos" Clicked="TrigoIslemler" Style="{StaticResource HesapSayiButonu}"/>
+            <Button Grid.Row="0" Grid.Column="2" Text="tan" Clicked="TrigoIslemler" Style="{StaticResource HesapSayiButonu}"/>
+            <Button Grid.Row="0" Grid.Column="3" Text="log" Clicked="TrigoIslemler" Style="{StaticResource HesapSayiButonu}"/>
+            <Button Grid.Row="0" Grid.Column="4" Text="ln" Clicked="TrigoIslemler" Style="{StaticResource HesapSayiButonu}"/>
+
+
+            <Button Grid.Row="1" Grid.Column="0" Text="x²" Clicked="KareKüpAl" Style="{StaticResource HesapSayiButonu}"/>
+            <Button Grid.Row="1" Grid.Column="1" Text="x³" Clicked="KareKüpAl" Style="{StaticResource HesapSayiButonu}"/>
+            <Button Grid.Row="1" Grid.Column="2" Text="√x" Clicked="KareKüpAl" Style="{StaticResource HesapSayiButonu}"/>
+            <Button Grid.Row="1" Grid.Column="3" Text="1/x" Clicked="KareKüpAl" Style="{StaticResource HesapSayiButonu}"/>
+            <Button Grid.Row="1" Grid.Column="4" Text="÷" Clicked="IslemTikla" Style="{StaticResource HesapIslemButonu}"/>
+
+
+            <Button Grid.Row="2" Grid.Column="0" Text="7" Clicked="SayiTikla" Style="{StaticResource HesapSayiButonu}"/>
+            <Button Grid.Row="2" Grid.Column="1" Text="8" Clicked="SayiTikla" Style="{StaticResource HesapSayiButonu}"/>
+            <Button Grid.Row="2" Grid.Column="2" Text="9" Clicked="SayiTikla" Style="{StaticResource HesapSayiButonu}"/>
+            <Button Grid.Row="2" Grid.Column="3" Text="C" Clicked="CTikla" Style="{StaticResource HesapSayiButonu}"/>
+            <Button Grid.Row="2" Grid.Column="4" Text="x" Clicked="IslemTikla" Style="{StaticResource HesapIslemButonu}"/>
+
+
+            <Button Grid.Row="3" Grid.Column="0" Text="4" Clicked="SayiTikla" Style="{StaticResource HesapSayiButonu}"/>
+            <Button Grid.Row="3" Grid.Column="1" Text="5" Clicked="SayiTikla" Style="{StaticResource HesapSayiButonu}"/>
+            <Button Grid.Row="3" Grid.Column="2" Text="6" Clicked="SayiTikla" Style="{StaticResource HesapSayiButonu}"/>
+            <Button Grid.Row="3" Grid.Column="3" Text="π" Clicked="PiTikla" Style="{StaticResource HesapSayiButonu}"/>
+            <Button Grid.Row="3" Grid.Column="4" Text="-" Clicked="IslemTikla" Style="{StaticResource HesapIslemButonu}"/>
+
+            <Button Grid.Row="4" Grid.Column="0" Text="1" Clicked="SayiTikla" Style="{StaticResource HesapSayiButonu}"/>
+            <Button Grid.Row="4" Grid.Column="1" Text="2" Clicked="SayiTikla" Style="{StaticResource HesapSayiButonu}"/>
+            <Button Grid.Row="4" Grid.Column="2" Text="3" Clicked="SayiTikla" Style="{StaticResource HesapSayiButonu}"/>
+            <Button Grid.Row="4" Grid.Column="3" Text="+/-" Clicked="IsaretDegis" Style="{StaticResource HesapSayiButonu}"/>
+            <Button Grid.Row="4" Grid.Column="4" Text="+" Clicked="IslemTikla" Style="{StaticResource HesapIslemButonu}"/>
+
+
+            <Button Grid.Row="5" Grid.Column="0" Text="%" Clicked="YuzdeTikla" Style="{StaticResource HesapSayiButonu}"/>
+            <Button Grid.Row="5" Grid.Column="1" Text="0" Clicked="SayiTikla" Style="{StaticResource HesapSayiButonu}"/>
+            <Button Grid.Row="5" Grid.Column="2" Text="," Clicked="VirgulKoy" Style="{StaticResource HesapSayiButonu}"/>
+            <Button Grid.Row="5" Grid.Column="3" Text="SİL" Clicked="Sil" Style="{StaticResource HesapSayiButonu}"/>
+            <Button Grid.Row="5" Grid.Column="4" Text="=" Clicked="Esittir" Style="{StaticResource HesapIslemButonu}"/>
+
+        </Grid>
+    </Grid>
+</ContentPage>
